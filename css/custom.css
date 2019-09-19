@@ -339,6 +339,35 @@ a.word:hover {
   #about .content {
     max-width: 100%;
     margin: 40px 0;
+    font-size: 1em;
+  }
+  .word {
+    font-size: 2.4em;
+  }
+  .word3 {
+    letter-spacing: 5px;
+  }
+  .word4 {
+    letter-spacing: 2.5px;
+  }
+  .word5 {
+    font-size: 2.95em;
+  }
+  .word6 {
+    letter-spacing: 11px;
+    font-size: 4em;
+}
+  .word7 {
+    font-size: 1.34em;
+  }
+  .word8 {
+    letter-spacing: 7px;
+  }
+  .word9 {
+    font-size: 2.55em;
+  }
+  .wrapper {
+    max-width: 300px;
   }
   body .flex-container:nth-child(2) .flex-item:nth-child(1) {
     height: 100vh;
@@ -350,7 +379,13 @@ a.word:hover {
 }
 @media (max-width: 640px) {
   .flex-item-button {
-    width: calc(100% - 10px);
+    width: calc(100% - 40px);
+    text-align: center;
+    float: none;
+    margin: 0 auto 10px;
+  }
+  .contact-container {
+    padding: 25vh 0;
   }
   a.word:hover {
     line-height: 1.05;
