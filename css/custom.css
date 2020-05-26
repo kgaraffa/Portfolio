@@ -214,6 +214,7 @@ a.word:hover {
 .overlay .cancel {
   position: absolute;
   width: 100vw;
+  z-index: 1;
   background: rgba(0, 0, 0, 0.5);
   display: block;
   height: 100vh;
