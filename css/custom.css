@@ -40,11 +40,11 @@ a {
 }
 .linked-button {
   text-decoration: none;
-  margin: 40px auto;
+  margin: 40px auto 0;
   text-transform: uppercase;
   text-align: center;
   display: block;
-  font-size: 1.5em;
+  font-size: 1.25em;
   padding: 12px 0;
   max-width: 200px;
   border: 1px solid;
@@ -73,7 +73,7 @@ video {
   background-position: center;
 }
 #about .content {
-  font-size: 1.25em;
+  font-size: 1.1em;
   padding: 2% 4%;
   border: 1px solid;
   max-width: 500px;
@@ -94,7 +94,7 @@ video {
   max-width: 1200px;
 }
 .flex-item-button {
-  width: calc(25% - 10px);
+  width: calc(33% - 10px);
   margin: 0 5px;
   float: left;
   text-align: center;
@@ -254,6 +254,18 @@ a.word:hover {
 .modal .content {
   overflow: auto;
   padding: 0 20px;
+}
+.content h2 {
+  margin: 5px 0;
+}
+.content ul {
+  margin: 0;
+  padding-inline-start: 10px;
+}
+.content li {
+  margin: 0 0 5px;
+  text-align: left;
+  font-size: .9em;
 }
 
 /* skills */
