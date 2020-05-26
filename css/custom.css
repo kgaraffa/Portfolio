@@ -17,7 +17,6 @@ a {
 
 /* flex container */
 .flex-container {
-  height: 100vh;
   flex-direction: unset;
   display: flex;
   position: relative;
@@ -228,6 +227,7 @@ a.word:hover {
 .modal {
   margin: 100px auto;
   padding: 20px 0;
+  z-index: 1;
   background: #fff;
   border: 1px solid #666;
   width: 100%;
@@ -344,14 +344,23 @@ a.word:hover {
 @media (max-width: 768px) {
   .flex-item {
     width: 100vw;
-    height: 50vh;
+    height: auto;
+  }
+  .wrapper {
+    padding: 60px 0 0;
+  }
+  .container, #contact {
+    height: auto;
+  }
+  .backtotop img {
+    display: none;
   }
   .flex-item h1 {
     margin: 40px 0;
   }
   #about .content {
     max-width: 100%;
-    margin: 40px 0;
+    margin: 60px 0;
     font-size: 1em;
   }
   .word {
@@ -383,14 +392,12 @@ a.word:hover {
     max-width: 300px;
   }
   body .flex-container:nth-child(2) .flex-item:nth-child(1) {
-    height: 100vh;
+    height: auto;
     margin: 0 10px;
   }
   body .flex-container:nth-child(2) .flex-item:nth-child(2) {
     display: none;
   }
-}
-@media (max-width: 640px) {
   .flex-item-button {
     width: calc(100% - 40px);
     text-align: center;
@@ -398,7 +405,7 @@ a.word:hover {
     margin: 0 auto 10px;
   }
   .contact-container {
-    padding: 25vh 0;
+    padding: 60px 0 0;
   }
   a.word:hover {
     line-height: 1.05;
