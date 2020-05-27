@@ -352,7 +352,7 @@ a.word:hover {
   .container, #contact {
     height: auto;
   }
-  .backtotop img {
+  .backtotop img, .word6 {
     display: none;
   }
   .flex-item h1 {
