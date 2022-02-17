@@ -7,7 +7,7 @@ html::-webkit-scrollbar {
 }
 body {
   margin: 0;
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 a {
   color: inherit;
@@ -44,10 +44,10 @@ a {
 .linked-button {
   text-decoration: none;
   margin: 40px auto 0;
-  text-transform: uppercase;
   text-align: center;
   display: block;
-  font-size: 1.25em;
+  text-transform: uppercase;
+  font-size: 1em;
   width: 100%;
   padding: 12px 0;
   max-width: 200px;
@@ -74,10 +74,10 @@ video {
   background: url("../img/me.jpg");
   background-size: cover;
   filter: grayscale(100%);
-  background-position: left center;
+  background-position: left bottom;
 }
 #about .content {
-  font-size: 1.1em;
+  font-size: 1em;
   padding: 2% 4%;
   border: 1px solid;
   max-width: 500px;
@@ -103,7 +103,7 @@ video {
   text-transform: uppercase;
   text-align: center;
   display: block;
-  font-size: 1.25em;
+  font-size: 1em;
   width: 100%;
   padding: 12px 0;
   max-width: 200px;
@@ -131,7 +131,7 @@ video {
 .flex-item-button a {
   padding: 20px 0;
   text-decoration: none;
-  font-size: 1.5em;
+  font-size: 1.25em;
   text-transform: uppercase;
   display: block;
   max-width: 400px;
@@ -182,7 +182,7 @@ a.word:hover {
 }
 .word1 {
   font-size: 2.5em;
-  letter-spacing: 3.5px;
+  letter-spacing: 1.325px;
 }
 .word2 {
   letter-spacing: 1px;
