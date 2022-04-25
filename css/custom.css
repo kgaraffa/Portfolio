@@ -64,6 +64,7 @@ a {
 }
 video {
   object-fit: cover;
+  object-position: left;
   height: 100%;
   width: 100%;
   filter: grayscale(100%);
