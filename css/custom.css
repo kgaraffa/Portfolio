@@ -203,6 +203,12 @@ a.word:hover {
 .word7 {
   font-size: 3.23em;
 }
+.word8 {
+letter-spacing: 23px;
+}
+.word9 {
+font-size: 3.15em;
+}
 
 /* back to top */
 .backtotop img{
