@@ -133,6 +133,7 @@ video {
 }
 #portfolio .backtotop svg{
     box-shadow: none;
+    background-color: transparent;
     fill: #fff;
 }
 #portfolio .container h2 {
@@ -285,6 +286,7 @@ a.word:hover {
     right: 10px;
     border: 1px solid;
     -webkit-transform: rotate(270deg);
+    background-color: #fff;
     transform: rotate(270deg);
     padding: 1%;
     border-radius: 50%;
