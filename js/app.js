@@ -7,8 +7,3 @@ $('a[href*="#"]').on('click', function(e) {
     }
   )
 })
-
-// $('html, body').css({
-//     overflow: 'hidden',
-//     height: '100%'
-// });
