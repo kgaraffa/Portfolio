@@ -11,7 +11,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <link href="css/custom.css" rel="stylesheet">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Cutive+Mono:wght@300" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Lato&display=swap" rel="stylesheet">
   <script src="js/app.js"></script>
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
@@ -27,7 +29,7 @@
       </video>
     </div>
     <div class="flex-item right">
-      <h1>Hi, I'm Kate.</h1>
+      <h1>Katie Stein —</h1>
       <div class="container">
         <p>Experienced <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
       </div>
@@ -53,53 +55,284 @@
           platform, I contribute to the creation of high-quality products that genuinely resonate with our users.</p>
       </div>
       <div class="linked-buttons-container">
-        <a class="linked-button hide" href="#work">Sample Work</a>
+        <a class="linked-button hide" href="#bevspot-work">Sample Work</a>
         <a class="linked-button hide" target="_blank" href="img/resume.pdf">Resume</a>
-        <a class="linked-button hide" href="#contact">Contact</a>
       </div>
     </div>
     <div class="flex-item right">
     </div>
-    <a href="#home">
-      <div class="backtotop hide"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
-          clip-rule="evenodd">
-          <path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
-        </svg></div>
-    </a>
   </div>
-  <div id="work" class="container hide">
-    <img src="img/mockup.jpg"/>
-    <a href="#about">
-      <div class="backtotop hide"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
-          clip-rule="evenodd">
-          <path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
-        </svg></div>
-    </a>
-  </div>
-  <div id="contact">
-    <div class="contact-container">
-      <div class="flex-item-button show">
-        <a href="img/resume.pdf"><span class="visible">Resume</span><span class="hidden">Download</span></a>
-      </div>
-      <div class="flex-item-button">
-        <a href="mailto:contact@katiestein.com"><span class="visible">Email</span><span
-            class="hidden">contact@katiestein.com</span></a>
-      </div>
-      <div class="flex-item-button">
-        <a href="tel:+1-203-581-1030"><span class="visible">Phone</span><span class="hidden">(203) 581-1030</span></a>
-      </div>
-      <div class="flex-item-button">
-        <a target="_blank" href="https://www.linkedin.com/in/katherinegaraffa/">LinkedIn</a>
+  <section id="bevspot-work" class="project-section-1 wf-section">
+    <div class="container-1 w-container">
+      <div class="project-box-1 w-clearfix">
+        <h1 class="heading">Multi Vendor Ordering</h1>
+        <p class="paragraph-subheading">Enhancing the User Experience (UX) for Users with Multiple Vendors Selling the
+          Same Item in Multiple Sizes.</p>
+        <div class="box-spacer"></div>
+        <div class="view-case-study-link w-clearfix">
+          <a href="#bevspot" class="case-study-link">View Project</a>
+          <span class="material-symbols-outlined">arrow_right_alt</span>
+        </div>
       </div>
     </div>
-    <a href="#work">
-      <div class="backtotop hide"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
-          clip-rule="evenodd">
-          <path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
-        </svg></div>
-    </a>
+    <div id="bevspot" class="overlay">
+      <a class="cancel" href="#bevspot-work"></a>
+      <div class="modal content-container">
+        <a class="back-button" href="#bevspot-work"><span class="material-symbols-outlined">close</span></a>
+        <h1 class="project-title">Multi-Vendor Ordering</h1>
+        <p class="project-description">Enhancing the User Experience (UX) for Customers with Multiple Vendors Selling
+          the Same Item.
+        <h2>The Problem</h2>
+        <p>Managing inventory and reporting becomes complex for a user who consumes the same item from different vendors
+          and in varying sizes. This situation creates challenges in accurately counting inventory and reporting,
+          especially when multiple instances of the same item are obtained from different vendors and in different
+          sizes. The user's objective is to effectively manage a single item that comes in multiple packaging sizes from
+          different vendors, allowing for easy comparison of costs among different purchasing options.</p>
+        <h2>The Solution</h2>
+        <ul>
+          <li>Redesign the Item Card to be able to add multiple vendors to a given packaging size</li>
+          <li>Redesign Cart Builder to showcase the different packaging sizes and vendors for a single item</li>
+        </ul>
+        <h2>Redesigning the Item Card</h2>
+        <p>By employing the 'Crazy 8s' method, I generated eight distinct mockups using Figma. These mockups explore
+          various approaches to showcasing packaging information within the Item Card component.</p>
+        <img src="img/bs_1.png" alt="Project Image" class="project-image">
+        <p>In collaboration with internal stakeholders, we conducted a thorough review of the eight designs, discussing
+          our likes and dislikes for each. Based on this feedback, I returned to Figma to integrate the most favorable
+          aspects into distinct approaches for displaying multiple packaging sizes sourced from multiple vendors.</p>
+        <img src="img/bs_2.png" alt="Project Image" class="project-image">
+        <img src="img/bs_3.png" alt="Project Image" class="project-image">
+        <p>I engaged in multiple iterations of this process, continuously refining our designs to strike a balance
+          between intuitiveness, cleanliness and minimal disruption to the current packaging implementation on the Item
+          Card. Throughout these rounds, we carefully considered and incorporated feedback to ensure the final display
+          of multiple packaging sizes from different vendors met our objectives.</p>
+        <img src="img/bs_4.png" alt="Project Image" class="project-image">
+        <br />
+        <hr />
+        <br />
+        <h2>Redesigning Cart Builder</h2>
+        <p>After designing a way for the user to create and manage a single item with multiple packaging sizes and
+          vendors, the next step was to facilitate the seamless ordering of this item in different sizes from various
+          vendors. To meet this requirement, my focus was on preserving the current UI as much as possible to minimize
+          any disruption for the user. Presented below are the high-fidelity mockups created in Figma, reflecting the
+          proposed design enhancements.</p>
+        <iframe style="border: 0;" width="800" height="450"
+          src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fii4vCVpwgu2extqrcbatGm%2FMulti-Vendor-Cart-Builder%3Ftype%3Ddesign%26node-id%3D1-4%26t%3D7BW932RYJ9CVZcie-1%26scaling%3Dscale-down-width%26page-id%3D0%253A1%26starting-point-node-id%3D1%253A1080%26mode%3Ddesign"
+          allowfullscreen></iframe>
+        <p>Once the mockups were finalized, we arranged discussions with key customers to gather their feedback on the
+          designs. After a few minor iterations based on their input, I collaborated closely with the backend engineer
+          to implement the required UI updates for accommodating multi-vendor ordering. The final design, reflecting
+          these changes, is presented below.</p>
+        <img src="img/bs_5.png" alt="Project Image" class="project-image">
+        <img src="img/bs_6.png" alt="Project Image" class="project-image">
+        <br />
+        <hr />
+        <br />
+        <h2>Next Steps</h2>
+        <p>Having enabled the creation and ordering of different purchasing options for the same item, our next step is
+          to gather feedback using Maze and staging data. This feedback will be instrumental in iterating on the design
+          prior to the official launch and identifying any critical bugs (P1) within the code. It's important to note
+          that this implementation involves significant changes to the back end and existing data, necessitating a
+          comprehensive release plan.<br /><br />
+
+          Once these changes are pushed to production, we will need to ensure that the rest of the application,
+          including inventory counting and reports, is modified to accommodate this new feature. This transition
+          requires a thorough approach to ensure a seamless integration and minimize any disruptions to the existing
+          functionality.<br /><br />
+
+          Overall, this endeavor represents a significant change that requires meticulous planning, thorough testing and
+          careful execution to ensure a smooth and successful adoption of the new capabilities and features within the
+          application.</p>
+      </div>
+    </div>
+    <a class="view-more-button-right" href="#operly-work">Next <span class="material-symbols-outlined">arrow_downward</span></a>
+  </section>
+
+  <section id="operly-work" class="project-section-1 wf-section">
+    <div class="container-2 x-container">
+      <div class="project-box-2 w-clearfix">
+        <h1 class="heading">Operly MVP</h1>
+        <p class="paragraph-subheading">Brand creation and UX/UI development for Operly's MVP.</p>
+        <div class="box-spacer"></div>
+        <div class="view-case-study-link w-clearfix">
+          <a href="#operly" class="case-study-link">View Project</a>
+          <span class="material-symbols-outlined">arrow_right_alt</span>
+        </div>
+      </div>
+    </div>
+    <div id="operly" class="overlay">
+      <a class="cancel" href="#operly-work"></a>
+      <div class="modal content-container">
+        <a class="back-button" href="#operly-work"><span class="material-symbols-outlined">close</span></a>
+        <h1 class="project-title">Multi-Vendor Ordering</h1>
+        <p class="project-description">Enhancing the User Experience (UX) for Customers with Multiple Vendors Selling
+          the Same Item.
+        <h2>The Problem</h2>
+        <p>Managing inventory and reporting becomes complex for a user who consumes the same item from different vendors
+          and in varying sizes. This situation creates challenges in accurately counting inventory and reporting,
+          especially when multiple instances of the same item are obtained from different vendors and in different
+          sizes. The user's objective is to effectively manage a single item that comes in multiple packaging sizes from
+          different vendors, allowing for easy comparison of costs among different purchasing options.</p>
+        <h2>The Solution</h2>
+        <ul>
+          <li>Redesign the Item Card to be able to add multiple vendors to a given packaging size</li>
+          <li>Redesign Cart Builder to showcase the different packaging sizes and vendors for a single item</li>
+        </ul>
+        <h2>Redesigning the Item Card</h2>
+        <p>By employing the 'Crazy 8s' method, I generated eight distinct mockups using Figma. These mockups explore
+          various approaches to showcasing packaging information within the Item Card component.</p>
+        <img src="img/bs_1.png" alt="Project Image" class="project-image">
+        <p>In collaboration with internal stakeholders, we conducted a thorough review of the eight designs, discussing
+          our likes and dislikes for each. Based on this feedback, I returned to Figma to integrate the most favorable
+          aspects into distinct approaches for displaying multiple packaging sizes sourced from multiple vendors.</p>
+        <img src="img/bs_2.png" alt="Project Image" class="project-image">
+        <img src="img/bs_3.png" alt="Project Image" class="project-image">
+        <p>I engaged in multiple iterations of this process, continuously refining our designs to strike a balance
+          between intuitiveness, cleanliness and minimal disruption to the current packaging implementation on the Item
+          Card. Throughout these rounds, we carefully considered and incorporated feedback to ensure the final display
+          of multiple packaging sizes from different vendors met our objectives.</p>
+        <img src="img/bs_4.png" alt="Project Image" class="project-image">
+        <br />
+        <hr />
+        <br />
+        <h2>Redesigning Cart Builder</h2>
+        <p>After designing a way for the user to create and manage a single item with multiple packaging sizes and
+          vendors, the next step was to facilitate the seamless ordering of this item in different sizes from various
+          vendors. To meet this requirement, my focus was on preserving the current UI as much as possible to minimize
+          any disruption for the user. Presented below are the high-fidelity mockups created in Figma, reflecting the
+          proposed design enhancements.</p>
+        <iframe style="border: 0;" width="800" height="450"
+          src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fii4vCVpwgu2extqrcbatGm%2FMulti-Vendor-Cart-Builder%3Ftype%3Ddesign%26node-id%3D1-4%26t%3D7BW932RYJ9CVZcie-1%26scaling%3Dscale-down-width%26page-id%3D0%253A1%26starting-point-node-id%3D1%253A1080%26mode%3Ddesign"
+          allowfullscreen></iframe>
+        <p>Once the mockups were finalized, we arranged discussions with key customers to gather their feedback on the
+          designs. After a few minor iterations based on their input, I collaborated closely with the backend engineer
+          to implement the required UI updates for accommodating multi-vendor ordering. The final design, reflecting
+          these changes, is presented below.</p>
+        <img src="img/bs_5.png" alt="Project Image" class="project-image">
+        <img src="img/bs_6.png" alt="Project Image" class="project-image">
+        <br />
+        <hr />
+        <br />
+        <h2>Next Steps</h2>
+        <p>Having enabled the creation and ordering of different purchasing options for the same item, our next step is
+          to gather feedback using Maze and staging data. This feedback will be instrumental in iterating on the design
+          prior to the official launch and identifying any critical bugs (P1) within the code. It's important to note
+          that this implementation involves significant changes to the back end and existing data, necessitating a
+          comprehensive release plan.<br /><br />
+
+          Once these changes are pushed to production, we will need to ensure that the rest of the application,
+          including inventory counting and reports, is modified to accommodate this new feature. This transition
+          requires a thorough approach to ensure a seamless integration and minimize any disruptions to the existing
+          functionality.<br /><br />
+
+          Overall, this endeavor represents a significant change that requires meticulous planning, thorough testing and
+          careful execution to ensure a smooth and successful adoption of the new capabilities and features within the
+          application.</p>
+      </div>
+    </div>
+    <a class="view-more-button-left" href="#engageware-work">Next <span class="material-symbols-outlined">arrow_downward</span></a>
+  </section>
+
+  <section id="engageware-work" class="project-section-1 wf-section">
+    <div class="container-3 w-container">
+      <div class="project-box-3 w-clearfix">
+        <h1 class="heading">Angularjs to Angular</h1>
+        <p class="paragraph-subheading">Taking advantage of the deprecation of AngularJS, we leveraged the migration
+          process to enhance the existing UX/UI.</p>
+        <div class="box-spacer"></div>
+        <div class="view-case-study-link w-clearfix">
+          <a href="#engageware" class="case-study-link">View Project</a>
+          <span class="material-symbols-outlined">arrow_right_alt</span>
+        </div>
+      </div>
+    </div>
+    <div id="engageware" class="overlay">
+      <a class="cancel" href="#engageware-work"></a>
+      <div class="modal content-container">
+        <a class="back-button" href="#engageware-work"><span class="material-symbols-outlined">close</span></a>
+        <h1 class="project-title">Multi-Vendor Ordering</h1>
+        <p class="project-description">Enhancing the User Experience (UX) for Customers with Multiple Vendors Selling
+          the Same Item.
+        <h2>The Problem</h2>
+        <p>Managing inventory and reporting becomes complex for a user who consumes the same item from different vendors
+          and in varying sizes. This situation creates challenges in accurately counting inventory and reporting,
+          especially when multiple instances of the same item are obtained from different vendors and in different
+          sizes. The user's objective is to effectively manage a single item that comes in multiple packaging sizes from
+          different vendors, allowing for easy comparison of costs among different purchasing options.</p>
+        <h2>The Solution</h2>
+        <ul>
+          <li>Redesign the Item Card to be able to add multiple vendors to a given packaging size</li>
+          <li>Redesign Cart Builder to showcase the different packaging sizes and vendors for a single item</li>
+        </ul>
+        <h2>Redesigning the Item Card</h2>
+        <p>By employing the 'Crazy 8s' method, I generated eight distinct mockups using Figma. These mockups explore
+          various approaches to showcasing packaging information within the Item Card component.</p>
+        <img src="img/bs_1.png" alt="Project Image" class="project-image">
+        <p>In collaboration with internal stakeholders, we conducted a thorough review of the eight designs, discussing
+          our likes and dislikes for each. Based on this feedback, I returned to Figma to integrate the most favorable
+          aspects into distinct approaches for displaying multiple packaging sizes sourced from multiple vendors.</p>
+        <img src="img/bs_2.png" alt="Project Image" class="project-image">
+        <img src="img/bs_3.png" alt="Project Image" class="project-image">
+        <p>I engaged in multiple iterations of this process, continuously refining our designs to strike a balance
+          between intuitiveness, cleanliness and minimal disruption to the current packaging implementation on the Item
+          Card. Throughout these rounds, we carefully considered and incorporated feedback to ensure the final display
+          of multiple packaging sizes from different vendors met our objectives.</p>
+        <img src="img/bs_4.png" alt="Project Image" class="project-image">
+        <br />
+        <hr />
+        <br />
+        <h2>Redesigning Cart Builder</h2>
+        <p>After designing a way for the user to create and manage a single item with multiple packaging sizes and
+          vendors, the next step was to facilitate the seamless ordering of this item in different sizes from various
+          vendors. To meet this requirement, my focus was on preserving the current UI as much as possible to minimize
+          any disruption for the user. Presented below are the high-fidelity mockups created in Figma, reflecting the
+          proposed design enhancements.</p>
+        <iframe style="border: 0;" width="800" height="450"
+          src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fii4vCVpwgu2extqrcbatGm%2FMulti-Vendor-Cart-Builder%3Ftype%3Ddesign%26node-id%3D1-4%26t%3D7BW932RYJ9CVZcie-1%26scaling%3Dscale-down-width%26page-id%3D0%253A1%26starting-point-node-id%3D1%253A1080%26mode%3Ddesign"
+          allowfullscreen></iframe>
+        <p>Once the mockups were finalized, we arranged discussions with key customers to gather their feedback on the
+          designs. After a few minor iterations based on their input, I collaborated closely with the backend engineer
+          to implement the required UI updates for accommodating multi-vendor ordering. The final design, reflecting
+          these changes, is presented below.</p>
+        <img src="img/bs_5.png" alt="Project Image" class="project-image">
+        <img src="img/bs_6.png" alt="Project Image" class="project-image">
+        <br />
+        <hr />
+        <br />
+        <h2>Next Steps</h2>
+        <p>Having enabled the creation and ordering of different purchasing options for the same item, our next step is
+          to gather feedback using Maze and staging data. This feedback will be instrumental in iterating on the design
+          prior to the official launch and identifying any critical bugs (P1) within the code. It's important to note
+          that this implementation involves significant changes to the back end and existing data, necessitating a
+          comprehensive release plan.<br /><br />
+
+          Once these changes are pushed to production, we will need to ensure that the rest of the application,
+          including inventory counting and reports, is modified to accommodate this new feature. This transition
+          requires a thorough approach to ensure a seamless integration and minimize any disruptions to the existing
+          functionality.<br /><br />
+
+          Overall, this endeavor represents a significant change that requires meticulous planning, thorough testing and
+          careful execution to ensure a smooth and successful adoption of the new capabilities and features within the
+          application.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer accent wf-section">
+    <div class="container-10">
+      <div class="float-right"><a href="https://www.linkedin.com/in/katherinegaraffa/" target="_blank"
+          class="social-icon-link w-inline-block"><span class="material-symbols-outlined">language</span></a><a
+          href="tel:+1-203-581-1030" target="_blank" class="social-icon-link w-inline-block"><span class="material-symbols-outlined">phone</span></a><a
+          href="mailto:contact@katiestein.com" target="_blank" class="social-icon-link w-inline-block"><span class="material-symbols-outlined">email</span></a><a
+          href="img/resume.pdf" target="_blank" class="social-icon-link w-inline-block"><span class="material-symbols-outlined">
+            history_edu
+            </span></a></div>
+      <div class="footer-text">Copyright © 2023 Katie Stein. All Rights Reserved.</div>
+    </div>
   </div>
-  <script src="js/type.js"></script>
- </body>
+
+</body>
+<script src="js/type.js"></script>
+</body>
 
 </html>
