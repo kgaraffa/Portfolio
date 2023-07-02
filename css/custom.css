@@ -517,20 +517,11 @@ body:has(.overlay:target) {
    .container-1,
    .container-3 {
       left: 0;
-      height: calc(50vh - 40px);
-      background-size: contain, auto;
-   }
-
-   .project-section-1 {
-      height: 60vh;
+      background-image: none;
    }
 
    #about {
       margin: 0 0 15vh;
-   }
-
-   .modal {
-      max-height: calc(55vh - 80px);
    }
 }
 
