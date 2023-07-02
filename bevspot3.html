@@ -20,37 +20,64 @@
     <a class="back-button" onclick="window.history.go(-1); return false;"><span
         class="material-symbols-outlined">close</span></a>
     <div class="modal content-container">
-      <h1 class="project-title">AI to Improve Order-Invoice Matching</h1>
-      <p class="project-description">Implementation of AI to streamline invoice processing by analyzing invoices and indicating matches and educated guesses.</p>
+      <h1 class="project-title">Improve Order Detail Line Item Matching</h1>
+      <p class="project-description">Implementation of AI to streamline invoice processing by analyzing invoices then indicating matches and educated guesses.</p>
       <h2>The Problem</h2>
-      <p>Users struggle to determine whether they should attach a returned process invoice to an existing order or create a new order. As a result, duplicate orders are frequently generated due to the uncertainty surrounding the items included in the returned processed invoice.</p>
+      <p>Users are not taking the time to match returned, unmatched invoice line items to items within the app. If we could eliminate the human factor for more line items, we would get better adoption rates.</p>
       <h2>The Solution</h2>
       <ul>
-        <li>Improve the UX behind submitting processed invoices to attach to order records during submission process</li>
-        <li>Improve the UI behind attaching returned processed invoices to ask the right questions to prevent duplication</li>
+        <li>Improve the order detail line item UI so it is more readable</li>
+        <li>Provide indicators when AI successfully matched an item, took a guess and did not attempt to guess</li>
+        <li>Give the user the ability to mark a line item as checked</li>
       </ul>
-      <h2>Determining the User Flows</h2>
-      <p>The initial phase of this project involved identifying and mapping out various user flows to guide the creation of mockups. Numerous decision points were identified, requiring careful consideration and inclusion in the process.</p>
-      <img src="img/bs_8.png" alt="Project Image" class="project-image">
-      <img src="img/bs_9.png" alt="Project Image" class="project-image">
-      <h2>Redesigning the User Flow</h2>
-      <p>After consideration for how users attach returned process invoices to order records today, taking in feedback from current users and customer success, I determined that the easiest solution would be to attach invoices to order records upon upload.</p>
-      <p>When users were recieving returned process invoices, they had no record of what was actually on the invoice besides the number of items, useless in most scenarios, and the vendor. However, I realized that when a user was uploading an invoice they had full context of what was on the invoice to reference for the order assignment.</p>
-      <p>After presenting a solution for the uploading of the invoice, I determined that this flow would be incredibly useless for returned invoices that users might get through a third party integration vs uploading it. Presenting the user with leading questions would indicate which action they should take whether to create new or attach to an order placed within app.</p>
-      <p>Once the plan was established, I proceeded to use Figma for creating mockups illustrating the envisioned flow. To maintain consistency within the application, I aimed to reuse components whenever possible. After considering various options, I settled on a slide-in card design that would contain a questionnaire for the user.</p>
-      <p>Through collaborative design iterations involving stakeholders, we arrived at a final set of mockups. These mockups were then presented to customers to seek their final approval and endorsement.</p>
-      <iframe style="border: 0" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FmRiYFSdq4qHZEsvRlPgXGd%2FOrder-History-v3-Improvement%3Ftype%3Ddesign%26node-id%3D1-3%26t%3DnT7k2Wc0GY73NMmJ-1%26scaling%3Dscale-down-width%26page-id%3D0%253A1%26starting-point-node-id%3D1%253A3%26mode%3Ddesign" allowfullscreen></iframe>
-      <h2>Implementation</h2>
-      <p>After a few minor iterations based on their input, I collaborated closely with the backend engineer to implement the new UI. The final design, reflecting these changes, is presented below.</p>
-      <img src="img/bs_10.png" alt="Project Image" class="project-image">
-      <img src="img/bs_11.png" alt="Project Image" class="project-image">
+      <h2>Improving Line Item UI</h2>
+      <p>By employing the 'Crazy 8s' method, I generated eight distinct mockups using Figma. These mockups explore various ways to showcase order detail line items.</p>
+      <img src="img/bs_13.png" alt="Project Image" class="project-image">
+      <h2>Creating Matching Logic UI</h2>
+      <p>After carefully analyzing the requirements, it was determined that three options would be available: a 100% match, an educated guess, or no guess at all. Working with Product, we wrote out the scenarios for the three situations.</p>
+      <p>100% Match</p>
+      <ul>
+        <li>Invoice item sku matches sku of a packaging/vendor relationship or item and invoice line item has been mapped previously</li>
+        <li>Packaging matches</li>
+        <li>Vendor exists on that given packaging or item</li>
+      </ul>
+      <p>Educated Guess</p>
+      <ul>
+        <li>Invoice item sku matches sku of a packaging/vendor relationship or item but invoice line item has ever been mapped before</li>
+        <li>Any assumptions made for qty or price</li>
+        <li>Invoice line item name matches item card name 1:1</li>
+        <li>Packaging not null or matchable to dropdown</li>
+        <li>Last three orders same map to packaging</li>
+      </ul>
+      <p>No Guess At All</p>
+      <ul>
+        <li>Packaging is null or un-matchable to dropdown</li>
+      </ul>
+      <p>Once the requirements were finalized, I went to Figma to devise a strategy for effectively notifying the user about the various scenarios in the UI.</p>
+      <img src="img/bs_14.png" alt="Project Image" class="project-image">
+      <ul>
+        <li>No color would indicate that we are 100% confident that this line item is correct</li>
+        <li>Yellow/ Orange would be an educated guess, alerting user to double check this with their original order and invoice</li>
+        <li>Red would mean we were unable to make an educated guess or 100% match</li>
+        <li>The user could hover over the packaging and get the actual line item information from the invoice that was extracted</li>
+      </ul>
+      <img src="img/bs_15.png" alt="Project Image" class="project-image">
+      <ul>
+        <li>The user would be able to check that they looked for the line item and everything is good</li>
+        <li>Once a selection or action was made on the no guess items, they would appear good</li>
+        <li>If a user checked the line item using the checkmark, the educated guess items would show as no action</li>
+      </ul>
+      <img src="img/bs_16.png" alt="Project Image" class="project-image">
+      <ul>
+        <li>After all line item information is added/ checked by the user, the ideal state would be every line item with green check mark</li>
+        <li>If item does not have a match at all, once matched the UI would show markings</li>
+      </ul>
       <br/>
       <hr/>
       <br/>
       <h2>Next Steps</h2>
-      <p>Efficiently processing invoices and linking them to order records is crucial for our users' success. Our upcoming features will involve utilizing AI to identify received items on the invoice and compare them to the ordered items, enabling us to identify any missing items.</p>
-      <p>Furthermore, we aim to integrate with accounting systems for restaurants and bars, allowing them to manage their financial records with accurate and automatically synced data. Ultimately, we intend to provide the capability to pay invoices directly through our application.</p>
-      <p>Throughout this journey, we will continuously iterate on the new user interface based on valuable feedback from users as they engage with this feature more and more.</p>      
+      <p>Once engineering is able to provide the backend for line item matching with a confidence score, I will work closely with an engineer to implement the UI.</p>
+      <p>We will then use analytics to see if the number of approved invoices increases over time with the easier, more intutitive UI. All the while taking feedback from customers on the design and accuracy of line item matching.</p>
     </div>
   </div>
 </body>
