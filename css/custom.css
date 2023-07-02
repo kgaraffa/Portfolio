@@ -209,6 +209,13 @@ a {
    right: 10px;
 }
 
+@media screen and (max-width: 882px){
+   .overlay .back-button {
+      position: fixed;
+      top: 30px;
+  }   
+}
+
 .overlay .cancel {
    position: absolute;
    width: 100vw;
@@ -391,8 +398,8 @@ body:has(.overlay:target) {
    margin: 20px 0;
    height: calc(100vh - 40px);
    margin-bottom: 0px;
-   background-image: url('../img/bs_12.png');
-   background-position: top right;
+   background-image: url('../img/bs_15.png');
+   background-position: top left;
    background-size: cover, auto;
    background-attachment: scroll, scroll;
 }
@@ -518,10 +525,6 @@ body:has(.overlay:target) {
    .container-3 {
       left: 0;
       background-image: none;
-   }
-
-   #about {
-      margin: 0 0 15vh;
    }
 }
 
