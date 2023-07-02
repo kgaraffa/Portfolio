@@ -143,8 +143,8 @@
   <section id="operly-work" class="project-section-1 wf-section">
     <div class="container-2 x-container">
       <div class="project-box-2 w-clearfix">
-        <h1 class="heading">Operly MVP</h1>
-        <p class="paragraph-subheading">Brand creation and UX/UI development for Operly's MVP.</p>
+        <h1 class="heading">Invoice Processing Adoption</h1>
+        <p class="paragraph-subheading">Improving the UX behind the current invoice processing flow to enhance adoption.</p>
         <div class="box-spacer"></div>
         <div class="view-case-study-link w-clearfix">
           <a href="#operly" class="case-study-link">View Project</a>
@@ -155,71 +155,37 @@
     <div id="operly" class="overlay">
       <a class="cancel" href="#operly-work"></a>
       <div class="modal content-container">
-        <a class="back-button" href="#operly-work"><span class="material-symbols-outlined">close</span></a>
-        <h1 class="project-title">Multi-Vendor Ordering</h1>
-        <p class="project-description">Enhancing the User Experience (UX) for Customers with Multiple Vendors Selling
-          the Same Item.
+        <h1 class="project-title">Invoice Processing Adoption</h1>
+        <p class="project-description">Improving the UX behind the current invoice processing flow to enhance adoption.</p>
         <h2>The Problem</h2>
-        <p>Managing inventory and reporting becomes complex for a user who consumes the same item from different vendors
-          and in varying sizes. This situation creates challenges in accurately counting inventory and reporting,
-          especially when multiple instances of the same item are obtained from different vendors and in different
-          sizes. The user's objective is to effectively manage a single item that comes in multiple packaging sizes from
-          different vendors, allowing for easy comparison of costs among different purchasing options.</p>
+        <p>Users struggle to determine whether they should attach a returned process invoice to an existing order or create a new order. As a result, duplicate orders are frequently generated due to the uncertainty surrounding the items included in the returned processed invoice.</p>
         <h2>The Solution</h2>
         <ul>
-          <li>Redesign the Item Card to be able to add multiple vendors to a given packaging size</li>
-          <li>Redesign Cart Builder to showcase the different packaging sizes and vendors for a single item</li>
+          <li>Improve the UX behind submitting processed invoices to attach to order records during submission process</li>
+          <li>Improve the UI behind attaching returned processed invoices to ask the right questions to prevent duplication</li>
         </ul>
-        <h2>Redesigning the Item Card</h2>
-        <p>By employing the 'Crazy 8s' method, I generated eight distinct mockups using Figma. These mockups explore
-          various approaches to showcasing packaging information within the Item Card component.</p>
-        <img src="img/bs_1.png" alt="Project Image" class="project-image">
-        <p>In collaboration with internal stakeholders, we conducted a thorough review of the eight designs, discussing
-          our likes and dislikes for each. Based on this feedback, I returned to Figma to integrate the most favorable
-          aspects into distinct approaches for displaying multiple packaging sizes sourced from multiple vendors.</p>
-        <img src="img/bs_2.png" alt="Project Image" class="project-image">
-        <img src="img/bs_3.png" alt="Project Image" class="project-image">
-        <p>I engaged in multiple iterations of this process, continuously refining our designs to strike a balance
-          between intuitiveness, cleanliness and minimal disruption to the current packaging implementation on the Item
-          Card. Throughout these rounds, we carefully considered and incorporated feedback to ensure the final display
-          of multiple packaging sizes from different vendors met our objectives.</p>
-        <img src="img/bs_4.png" alt="Project Image" class="project-image">
-        <br />
-        <hr />
-        <br />
-        <h2>Redesigning Cart Builder</h2>
-        <p>After designing a way for the user to create and manage a single item with multiple packaging sizes and
-          vendors, the next step was to facilitate the seamless ordering of this item in different sizes from various
-          vendors. To meet this requirement, my focus was on preserving the current UI as much as possible to minimize
-          any disruption for the user. Presented below are the high-fidelity mockups created in Figma, reflecting the
-          proposed design enhancements.</p>
-        <iframe style="border: 0;" width="800" height="450"
-          src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fii4vCVpwgu2extqrcbatGm%2FMulti-Vendor-Cart-Builder%3Ftype%3Ddesign%26node-id%3D1-4%26t%3D7BW932RYJ9CVZcie-1%26scaling%3Dscale-down-width%26page-id%3D0%253A1%26starting-point-node-id%3D1%253A1080%26mode%3Ddesign"
-          allowfullscreen></iframe>
-        <p>Once the mockups were finalized, we arranged discussions with key customers to gather their feedback on the
-          designs. After a few minor iterations based on their input, I collaborated closely with the backend engineer
-          to implement the required UI updates for accommodating multi-vendor ordering. The final design, reflecting
-          these changes, is presented below.</p>
-        <img src="img/bs_5.png" alt="Project Image" class="project-image">
-        <img src="img/bs_6.png" alt="Project Image" class="project-image">
-        <br />
-        <hr />
-        <br />
+        <h2>Determining the User Flows</h2>
+        <p>The initial phase of this project involved identifying and mapping out various user flows to guide the creation of mockups. Numerous decision points were identified, requiring careful consideration and inclusion in the process.</p>
+        <img src="img/bs_8.png" alt="Project Image" class="project-image">
+        <img src="img/bs_9.png" alt="Project Image" class="project-image">
+        <h2>Redesigning the User Flow</h2>
+        <p>After consideration for how users attach returned process invoices to order records today, taking in feedback from current users and customer success, I determined that the easiest solution would be to attach invoices to order records upon upload.</p>
+        <p>When users were recieving returned process invoices, they had no record of what was actually on the invoice besides the number of items, useless in most scenarios, and the vendor. However, I realized that when a user was uploading an invoice they had full context of what was on the invoice to reference for the order assignment.</p>
+        <p>After presenting a solution for the uploading of the invoice, I determined that this flow would be incredibly useless for returned invoices that users might get through a third party integration vs uploading it. Presenting the user with leading questions would indicate which action they should take whether to create new or attach to an order placed within app.</p>
+        <p>Once the plan was established, I proceeded to use Figma for creating mockups illustrating the envisioned flow. To maintain consistency within the application, I aimed to reuse components whenever possible. After considering various options, I settled on a slide-in card design that would contain a questionnaire for the user.</p>
+        <p>Through collaborative design iterations involving stakeholders, we arrived at a final set of mockups. These mockups were then presented to customers to seek their final approval and endorsement.</p>
+        <iframe style="border: 0" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FmRiYFSdq4qHZEsvRlPgXGd%2FOrder-History-v3-Improvement%3Ftype%3Ddesign%26node-id%3D1-3%26t%3DnT7k2Wc0GY73NMmJ-1%26scaling%3Dscale-down-width%26page-id%3D0%253A1%26starting-point-node-id%3D1%253A3%26mode%3Ddesign" allowfullscreen></iframe>
+        <h2>Implementation</h2>
+        <p>After a few minor iterations based on their input, I collaborated closely with the backend engineer to implement the new UI. The final design, reflecting these changes, is presented below.</p>
+        <img src="img/bs_10.png" alt="Project Image" class="project-image">
+        <img src="img/bs_11.png" alt="Project Image" class="project-image">
+        <br/>
+        <hr/>
+        <br/>
         <h2>Next Steps</h2>
-        <p>Having enabled the creation and ordering of different purchasing options for the same item, our next step is
-          to gather feedback using Maze and staging data. This feedback will be instrumental in iterating on the design
-          prior to the official launch and identifying any critical bugs (P1) within the code. It's important to note
-          that this implementation involves significant changes to the back end and existing data, necessitating a
-          comprehensive release plan.<br /><br />
-
-          Once these changes are pushed to production, we will need to ensure that the rest of the application,
-          including inventory counting and reports, is modified to accommodate this new feature. This transition
-          requires a thorough approach to ensure a seamless integration and minimize any disruptions to the existing
-          functionality.<br /><br />
-
-          Overall, this endeavor represents a significant change that requires meticulous planning, thorough testing and
-          careful execution to ensure a smooth and successful adoption of the new capabilities and features within the
-          application.</p>
+        <p>Efficiently processing invoices and linking them to order records is crucial for our users' success. Our upcoming features will involve utilizing AI to identify received items on the invoice and compare them to the ordered items, enabling us to identify any missing items.</p>
+        <p>Furthermore, we aim to integrate with accounting systems for restaurants and bars, allowing them to manage their financial records with accurate and automatically synced data. Ultimately, we intend to provide the capability to pay invoices directly through our application.</p>
+        <p>Throughout this journey, we will continuously iterate on the new user interface based on valuable feedback from users as they engage with this feature more and more.</p>      
       </div>
     </div>
     <a class="view-more-button-left hide" href="#engageware-work">Next <span class="material-symbols-outlined">arrow_downward</span></a>
@@ -228,7 +194,7 @@
   <section id="engageware-work" class="project-section-1 wf-section">
     <div class="container-3 w-container">
       <div class="project-box-3 w-clearfix">
-        <h1 class="heading">Angularjs to Angular</h1>
+        <h1 class="heading">AngularJS to Angular</h1>
         <p class="paragraph-subheading">Taking advantage of the deprecation of AngularJS, we leveraged the migration
           process to enhance the existing UX/UI.</p>
         <div class="box-spacer"></div>

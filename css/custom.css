@@ -402,8 +402,8 @@ body:has(.overlay:target) {
    margin: 20px 0;
    height: calc(100vh - 40px);
    margin-bottom: 0px;
-   background-image: url('../img/op_1.png');
-   background-position: top left;
+   background-image: url('../img/bs_7.png');
+   background-position: top right;
    background-size: cover, auto;
    background-repeat: no-repeat, repeat;
 }
@@ -462,7 +462,7 @@ body:has(.overlay:target) {
    margin-left: 0px;
    padding: 40px;
    float: left;
-   background-color: #2ecc71;
+   background-color: #f49c57;
    opacity: 1;
 }
 
