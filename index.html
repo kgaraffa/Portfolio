@@ -37,8 +37,8 @@
           implementation.</p>
         <p>Leveraging my versatile skill set, I actively engage with cross-functional teams to deliver exceptional
           products that not only enhance user engagement but also drive significant business growth. By harmonizing
-          user-centered design principles with a profound understanding of the technological foundations of our
-          platform, I contribute to the creation of high-quality products that genuinely resonate with our users.</p>
+          user-centered design principles with an understanding of the technological foundations of our
+          platform, I contribute to the creation of high-quality features that genuinely resonate with our users.</p>
       </div>
       <div class="linked-buttons-container">
         <a class="linked-button hide" href="#ai-work">Sample Work</a>
@@ -53,7 +53,7 @@
     <div class="container-1 w-container">
       <div class="project-box-1 w-clearfix">
         <h1 class="heading">Order Line Item Matching</h1>
-        <p class="paragraph-subheading">Using AI in invoice processing then indicating matches and educated guesses
+        <p class="paragraph-subheading">Introducing AI to invoice processing then indicating matches and educated guesses
           within the UI.</p>
         <div class="box-spacer"></div>
         <div class="view-case-study-link w-clearfix">
@@ -67,7 +67,7 @@
       <div class="modal content-container">
         <a class="back-button" onclick="window.history.go(-1); return false;"><span class="material-symbols-outlined">close</span></a>
         <h1 class="project-title">Order Line Item Matching</h1>
-        <p class="project-description">Using AI in invoice processing then indicating matches and educated guesses
+        <p class="project-description">Introducing AI to invoice processing then indicating matches and educated guesses
           within the UI.</p>
         <h2>The Problem</h2>
         <p>The lack of user approval for invoices stems from the time-consuming task of manually cross-checking line 
@@ -76,7 +76,7 @@
         <h2>The Solution</h2>
         <ul>
           <li>Enhance the UI for order detail line items to improve readability.</li>
-          <li>Include indicators for successful AI matching, educated guesses, and cases where AI did not attempt to
+          <li>Include indicators for successful AI matching, educated guesses and cases where AI did not attempt to
             guess.</li>
           <li>Enable users to mark line items as checked.</li>
         </ul>
@@ -84,13 +84,16 @@
         <p>By employing the 'Crazy 8s' method, I generated eight distinct mockups using Figma. These mockups explore
           various ways to showcase order detail line items.</p>
         <img src="img/bs_13.png" alt="Project Image" class="project-image">
+        <p>Once the eight designs were reviewed, I iterated on the feedback received from Product and Customer Success until I
+          received approval for the new line item design.
+        </p>
         <h2>Line Item Matching UX</h2>
         <p>After carefully analyzing the requirements, it was determined that three options would be available: a 100%
           match, an educated guess, or no guess at all. Working with Product, we wrote out the scenarios for the three
           situations.</p>
         <p>100% Match</p>
         <ul>
-          <li>Invoice item SKU matches the SKU of a packaging/vendor relationship or the item and invoice line item have
+          <li>Invoice item SKU matches the SKU of a packaging/vendor relationship or the item and invoice line item hadRed indicates that we were unable to make an educated guess or achieve a 100% match
             been mapped previously.</li>
           <li>Packaging matches.</li>
           <li>Vendor exists for that given packaging or item.</li>
@@ -123,8 +126,8 @@
         <img src="img/bs_15.png" alt="Project Image" class="project-image">
         <ul>
           <li>The user can verify that they have checked the line item and everything is satisfactory.</li>
-          <li>After making a selection or taking an action on the items without an educated guess, they would be marked
-            as satisfactory.</li>
+          <li>After making a selection or taking an action on the items with an educated guess, the indicators would be 
+            removed.</li>
           <li>If a user verifies the line item using a checkmark, the items with an educated guess will be marked as
             having no action required.</li>
         </ul>
@@ -138,18 +141,18 @@
         <hr />
         <br />
         <h2>Next Steps</h2>
-        <p>Once the engineering team enables the backend for line item matching along with a confidence score, I will
-          collaborate closely with an engineer to incorporate the UI.</p>
-        <p>Subsequently, we will utilize analytics to evaluate the potential increase in approved invoices over time as
-          a result of the improved, more intuitive UI. Throughout this process, we will actively gather feedback from
-          customers regarding the design and accuracy of line item matching.</p>
+        <p>Once the engineering team is able to achieve the backend for line item matching along with a confidence score, 
+          I will collaborate closely with an engineer to incorporate the front end UI.</p>
+        <p>We will then utilize analytics to evaluate the potential increase in approved invoices over time as a result of 
+          the new, intuitive UI. Throughout this process, we will actively gather feedback from users regarding 
+          the design and accuracy of line item matching.</p>
       </div>
     </div>
-    <a class="view-more-button-right hide" href="#multi-vendor-work">Multi Vendor Ordering <span
+    <a class="view-more-button-right hide" href="#multi vendor-work">Multi Vendor Ordering <span
         class="material-symbols-outlined">arrow_downward</span></a>
   </section>
 
-  <section id="multi-vendor-work" class="project-section-1 wf-section">
+  <section id="multi vendor-work" class="project-section-1 wf-section">
     <div class="container-2 x-container">
       <div class="project-box-2 w-clearfix">
         <h1 class="heading">Multi Vendor Ordering</h1>
@@ -157,13 +160,13 @@
           multiple sizes.</p>
         <div class="box-spacer"></div>
         <div class="view-case-study-link w-clearfix">
-          <a href="#multi-vendor" class="case-study-link">Project Overview</a>
+          <a href="#multi vendor" class="case-study-link">Project Overview</a>
           <span class="material-symbols-outlined">arrow_right_alt</span>
         </div>
       </div>
     </div>
-    <div id="multi-vendor" class="overlay">
-      <a class="cancel" href="#multi-vendor-work"></a>
+    <div id="multi vendor" class="overlay">
+      <a class="cancel" href="#multi vendor-work"></a>
       <div class="modal content-container">
         <a class="back-button" onclick="window.history.go(-1); return false;"><span class="material-symbols-outlined">close</span></a>
         <h1 class="project-title">Multi Vendor Ordering</h1>
@@ -184,15 +187,16 @@
         <p>By employing the 'Crazy 8s' method, I generated eight distinct mockups using Figma. These mockups explore
           various approaches to showcasing packaging information within the Item Card component.</p>
         <img src="img/bs_1.png" alt="Project Image" class="project-image">
-        <p>In collaboration with internal stakeholders, we conducted a thorough review of the eight designs, discussing
-          our likes and dislikes for each. Based on this feedback, I returned to Figma to integrate the most favorable
-          aspects into distinct approaches for displaying multiple packaging sizes sourced from multiple vendors.</p>
+        <p>In collaboration with internal team members, we conducted a review of the eight designs, discussing
+          the likes and dislikes for each. Based on this feedback, I returned to Figma to integrate the most favorable
+          aspects into an approach for displaying multiple packaging sizes sourced from multiple vendors.</p>
         <img src="img/bs_2.png" alt="Project Image" class="project-image">
         <img src="img/bs_3.png" alt="Project Image" class="project-image">
-        <p>I engaged in multiple iterations of this process, continuously refining our designs to strike a balance
-          between intuitiveness, cleanliness and minimal disruption to the current packaging implementation on the Item
+        <p>I engaged in multiple iterations of this process, continuously refining the design to strike a balance
+          between intuitiveness, cleanliness and minimal disruption to the current implementation of the Item
           Card. Throughout these rounds, we carefully considered and incorporated feedback to ensure the final display
-          of multiple packaging sizes from different vendors met our objectives.</p>
+          of multiple packaging sizes from different vendors met our objectives. The staging UI, reflecting
+          these changes, is presented below.</p>
         <img src="img/bs_4.png" alt="Project Image" class="project-image">
         <br />
         <hr />
@@ -204,11 +208,11 @@
           any disruption for the user. Presented below are the high-fidelity mockups created in Figma, reflecting the
           proposed design enhancements.</p>
         <iframe style="border: 0;" width="800" height="450"
-          src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fii4vCVpwgu2extqrcbatGm%2FMulti-Vendor-Cart-Builder%3Ftype%3Ddesign%26node-id%3D1-4%26t%3D7BW932RYJ9CVZcie-1%26scaling%3Dscale-down-width%26page-id%3D0%253A1%26starting-point-node-id%3D1%253A1080%26mode%3Ddesign"
+          src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fii4vCVpwgu2extqrcbatGm%2Fmulti vendor-Cart-Builder%3Ftype%3Ddesign%26node-id%3D1-4%26t%3D7BW932RYJ9CVZcie-1%26scaling%3Dscale-down-width%26page-id%3D0%253A1%26starting-point-node-id%3D1%253A1080%26mode%3Ddesign"
           allowfullscreen></iframe>
-        <p>Once the mockups were finalized, we arranged discussions with key customers to gather their feedback on the
-          designs. After a few minor iterations based on their input, I collaborated closely with the backend engineer
-          to implement the required UI updates for accommodating multi-vendor ordering. The final design, reflecting
+        <p>Once the mockups were finalized, we arranged discussions with key users to gather their feedback on the
+          designs. After a few minor iterations based on their input, I collaborated closely with an engineer
+          to implement the required UI updates for accommodating multi vendor ordering. The staging UI, reflecting
           these changes, is presented below.</p>
         <img src="img/bs_5.png" alt="Project Image" class="project-image">
         <img src="img/bs_6.png" alt="Project Image" class="project-image">
@@ -220,14 +224,14 @@
           to gather feedback using Maze and staging data. This feedback will be instrumental in iterating on the design
           prior to the official launch and identifying any critical bugs (P1) within the code. It's important to note
           that this implementation involves significant changes to the back end and existing data, necessitating a
-          comprehensive release plan.<br /><br />
+          comprehensive release plan.</p>
 
-          Once these changes are pushed to production, we will need to ensure that the rest of the application,
+          <p>Once these changes are pushed to production, we will need to ensure that the rest of the application,
           including inventory counting and reports, is modified to accommodate this new feature. This transition
           requires a thorough approach to ensure a seamless integration and minimize any disruptions to the existing
-          functionality.<br /><br />
+          functionality.</p>
 
-          Overall, this endeavor represents a significant change that requires meticulous planning, thorough testing and
+          <p>Overall, this endeavor represents a significant change that requires meticulous planning, thorough testing and
           careful execution to ensure a smooth and successful adoption of the new capabilities and features within the
           application.</p>
       </div>
@@ -241,7 +245,7 @@
       <div class="project-box-3 w-clearfix">
         <h1 class="heading">Invoice Processing Usage</h1>
         <p class="paragraph-subheading">Improving the UX/UI behind the current invoice processing flow to improve
-          adoption rates.</p>
+          usage rates.</p>
         <div class="box-spacer"></div>
         <div class="view-case-study-link w-clearfix">
           <a href="#invoice-processing" class="case-study-link">Project Overview</a>
@@ -255,7 +259,7 @@
         <a class="back-button" onclick="window.history.go(-1); return false;"><span class="material-symbols-outlined">close</span></a>
         <h1 class="project-title">Invoice Processing Usage</h1>
         <p class="project-description">Improving the UX/UI behind the current invoice processing flow to enhance
-          adoption rates.</p>
+          usage rates.</p>
         <h2>The Problem</h2>
         <p>Users struggle to determine whether they should attach a returned process invoice to an existing order or
           create a new order. As a result, duplicate orders are frequently generated due to the uncertainty surrounding
@@ -275,14 +279,14 @@
         <img src="img/bs_9.png" alt="Project Image" class="project-image">
         <h2>Redesigning the User Flow</h2>
         <p>After consideration for how users attach returned process invoices to order records today, taking in feedback
-          from current users and customer success, I determined that the easiest solution would be to attach invoices to
-          order records upon upload.</p>
+          from current users and the Customer Success team, I determined that the easiest solution would be to attach 
+          invoices to order records upon upload.</p>
         <p>When users were recieving returned process invoices, they had no record of what was actually on the invoice
-          besides the number of items, useless in most scenarios, and the vendor. However, I realized that when a user
+          besides the number of items, useless in most scenarios, and the vendor. I realized that when a user
           was uploading an invoice they had full context of what was on the invoice to reference for the order
           assignment.</p>
-        <p>After presenting a solution for the uploading of the invoice, I determined that this flow would be incredibly
-          useless for returned invoices that users might get through a third party integration vs uploading it.
+        <p>After presenting a solution for the uploading of the invoice, I determined that this flow would be useless 
+          for returned invoices that users might get through a third party integration vs uploading it through our UI.
           Presenting the user with leading questions would indicate which action they should take whether to create new
           or attach to an order placed within app.</p>
         <p>Once the plan was established, I proceeded to use Figma for creating mockups illustrating the envisioned
@@ -290,12 +294,12 @@
           considering various options, I settled on a slide-in card design that would contain a questionnaire for the
           user.</p>
         <p>Through collaborative design iterations involving stakeholders, we arrived at a final set of mockups. These
-          mockups were then presented to customers to seek their final approval and endorsement.</p>
+          mockups were then presented to users to seek their final approval.</p>
         <iframe style="border: 0" width="800" height="450"
           src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FmRiYFSdq4qHZEsvRlPgXGd%2FOrder-History-v3-Improvement%3Ftype%3Ddesign%26node-id%3D1-3%26t%3DnT7k2Wc0GY73NMmJ-1%26scaling%3Dscale-down-width%26page-id%3D0%253A1%26starting-point-node-id%3D1%253A3%26mode%3Ddesign"
           allowfullscreen></iframe>
         <h2>Implementation</h2>
-        <p>After a few minor iterations based on their input, I collaborated closely with the backend engineer to
+        <p>After a few minor iterations based on user input, I collaborated closely with an engineer to
           implement the new UI. The final design, reflecting these changes, is presented below.</p>
         <img src="img/bs_10.png" alt="Project Image" class="project-image">
         <img src="img/bs_11.png" alt="Project Image" class="project-image">
@@ -306,11 +310,11 @@
         <p>Efficiently processing invoices and linking them to order records is crucial for our users' success. Our
           upcoming features will involve utilizing AI to identify received items on the invoice and compare them to the
           ordered items, enabling us to identify any missing items.</p>
-        <p>Furthermore, we aim to integrate with accounting systems for restaurants and bars, allowing them to manage
-          their financial records with accurate and automatically synced data. Ultimately, we intend to provide the
-          capability to pay invoices directly through our application.</p>
-        <p>Throughout this journey, we will continuously iterate on the new user interface based on valuable feedback
-          from users as they engage with this feature more and more.</p>
+        <p>We plan to integrate with accounting systems for restaurants and bars, allowing them to manage their financial 
+          records with accurate, synced data. Ultimately, we intend to provide the capability to pay invoices directly 
+          through our application.</p>
+        <p>Throughout these future features, we will continuously iterate on the new user interface based on valuable \
+          feedback from users as they engage with this feature more and more.</p>
       </div>
     </div>
   </section>
