@@ -399,6 +399,7 @@ body:has(.overlay:target) {
    height: calc(100vh - 40px);
    margin-bottom: 0px;
    background-image: url('../img/bs_15.png');
+   box-shadow: 1px 2px 2px 2px rgba(12, 12, 12, 0.2);
    background-position: top left;
    background-size: cover, auto;
    background-attachment: scroll, scroll;
@@ -415,6 +416,7 @@ body:has(.overlay:target) {
    height: calc(100vh - 40px);
    margin-bottom: 0px;
    background-image: url('../img/bs_6.png');
+   box-shadow: 1px 2px 2px 2px rgba(12, 12, 12, 0.2);
    background-position: top right;
    background-size: cover, auto;
    background-repeat: no-repeat, repeat;
@@ -428,9 +430,18 @@ body:has(.overlay:target) {
    height: calc(100vh - 40px);
    margin-bottom: 0px;
    background-image: url('../img/bs_7.png');
+   box-shadow: 1px 2px 2px 2px rgba(12, 12, 12, 0.2);
    background-position: top right;
    background-size: cover, auto;
    background-attachment: scroll, scroll;
+}
+
+#multi-vendor-work {
+   top: -100px;
+}
+
+#invoice-processing-work {
+   top: -200px;
 }
 
 .w-container {
@@ -524,8 +535,12 @@ body:has(.overlay:target) {
    .container-1,
    .container-3 {
       left: 0;
+      box-shadow: none;
       background-image: none;
    }
+   #multi-vendor-work, #invoice-processing-work {
+      top: 0;
+  }
 }
 
 .project-link-block {
@@ -595,7 +610,8 @@ body:has(.overlay:target) {
 
 .footer {
    padding-top: 0;
-   padding-bottom: 50px;
+   top: -100px;
+   position: relative;
 }
 
 @media screen and (max-width: 767px) {
@@ -674,23 +690,4 @@ body:has(.overlay:target) {
       clear: none;
       text-align: left;
    }
-}
-
-.view-more-button-right {
-   position: absolute;
-   bottom: 15px;
-   font-family: 'Libre Baskerville', serif;
-   right: 15px;
-}
-
-.view-more-button-left {
-   position: absolute;
-   font-family: 'Libre Baskerville', serif;
-   bottom: 15px;
-   left: 15px;
-}
-
-.view-more-button-left span,
-.view-more-button-right span {
-   vertical-align: bottom;
 }
